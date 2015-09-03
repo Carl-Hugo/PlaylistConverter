@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="PlaylistConverter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PlaylistConverter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="8,32,0,0">
+            <StackPanel Orientation="Horizontal" Margin="0,20">
+                <TextBox x:Name="tbxFileName" Width="280" HorizontalAlignment="Left"/>
+                <Button x:Name="btnAllInOne" Content="Find, Convert &amp; Save Playlist" Margin="0, 0, 50, 0" />
+                <Button x:Name="btnFind" Content="Find Playlist" Margin="0, 0, 5, 0" />
+                <Button x:Name="btnConvert" Content="Convert Playlist" Margin="0, 0, 5, 0" />
+                <Button x:Name="btnSaveResults" Content="Save Playlist As" Margin="0, 0, 5, 0" />
+            </StackPanel>
+
+            <TextBlock Text="Source Playlist: " FontWeight="Bold" FontSize="18.667" />
+            <ScrollViewer Height="200" Width="auto">
+                <TextBlock x:Name="tbxOriginalPlayList" />
+            </ScrollViewer>
+
+            <TextBlock Text="Destination Playlist: " FontWeight="Bold" FontSize="18.667" Margin="0, 20, 0, 0" />
+            <ScrollViewer Height="200" Width="auto">
+                <TextBlock x:Name="tbxNewPlayList" />
+            </ScrollViewer>
+
+            <TextBlock Text="File saved to: " FontWeight="Bold" FontSize="18.667" Margin="0, 20, 0, 0" />
+            <TextBlock x:Name="tbxSavedDestination" />
+        </StackPanel>
+    </Grid>
+</Page>

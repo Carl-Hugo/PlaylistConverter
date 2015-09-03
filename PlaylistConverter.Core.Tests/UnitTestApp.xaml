@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="PlaylistConverter.Core.Tests.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PlaylistConverter.Core.Tests"
+    RequestedTheme="Light">
+
+</Application>
